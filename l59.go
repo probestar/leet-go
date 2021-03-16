@@ -1,4 +1,4 @@
-package main
+package leet
 
 var directions = [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
 
@@ -21,8 +21,4 @@ func generateMatrix(n int) [][]int {
 		c += directions[index][1]
 	}
 	return ret
-}
-
-func main() {
-	generateMatrix(3)
 }
