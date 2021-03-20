@@ -1,4 +1,4 @@
-package leet
+package l705
 
 const myHashSetCap = 100000
 
