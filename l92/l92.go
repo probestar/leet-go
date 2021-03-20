@@ -1,7 +1,11 @@
-package leet
+package l92
 
-func reverse(head, tail *ListNode) *ListNode {
-	var pre *ListNode
+import (
+	"probestar.com/leet-go/list_node"
+)
+
+func reverse(head, tail *list_node.ListNode) *list_node.ListNode {
+	var pre *list_node.ListNode
 	curr := head
 	end := tail.Next
 	for curr != end {
@@ -13,8 +17,8 @@ func reverse(head, tail *ListNode) *ListNode {
 	return pre
 }
 
-func reverseBetween(head *ListNode, left int, right int) *ListNode {
-	var l1, l2, l3, l4 *ListNode
+func reverseBetween(head *list_node.ListNode, left int, right int) *list_node.ListNode {
+	var l1, l2, l3, l4 *list_node.ListNode
 	i := 1
 	curr := head
 	for curr != nil {

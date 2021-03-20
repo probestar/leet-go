@@ -1,4 +1,4 @@
-package leet
+package l59
 
 var directions = [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
 
