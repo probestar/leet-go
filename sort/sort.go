@@ -46,3 +46,17 @@ func insertion(src []int) []int {
 	}
 	return src
 }
+
+func shell(src []int) []int {
+	n := len(src)
+	for i := n / 2; n > 0; n /= 2 {
+		for j := 0; j < i; j++ {
+			if src[j] > src[j+i] {
+				temp := src[j]
+				src[j] = src[j+i]
+				src[j+i] = temp
+			}
+		}
+	}
+	return src
+}
